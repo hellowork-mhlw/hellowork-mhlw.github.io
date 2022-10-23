@@ -2,6 +2,7 @@ import fetch from 'node-fetch';
 import { JSDOM } from "jsdom";
 
 export default function handler(req, res) {
+  res.setHeader('Cache-Control', 's-maxage=86400');
   const promise = fetch("https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do", {
     method: "POST",
     body: new URLSearchParams({
