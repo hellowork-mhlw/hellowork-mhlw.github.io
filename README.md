@@ -32,6 +32,12 @@ curl -c 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRa
 curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&screenId=GECA110010&maba_vrbs' | grep 件を表示
 ```
 
+表示件数`fwListNaviDisp=50`
+```bash
+curl -c 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&searchBtn&fwListNaviDisp=50&screenId=GECA110010&maba_vrbs=searchBtn' | grep 件を表示
+curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&fwListNaviDisp=50&screenId=GECA110010&maba_vrbs' | grep 件を表示
+```
+
 ## 検索パラメータ
 
 | 名前 | 説明 | 値 |
