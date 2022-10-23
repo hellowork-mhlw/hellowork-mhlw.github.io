@@ -68,14 +68,14 @@ curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListN
 | kyujinkensu | 求人件数 | 1227618 |
 | fwListNaviSortTop | 並び順トップ | 1: 受付年月日順(デフォルト)<br>2: 紹介期限日順 |
 | fwListNaviDispTop | 表示件数トップ | 10: 10件<br>30: 30件(デフォルト)<br>50: 50件 |
-| fwListNaviBtnPrev |  | ＜前へ |
-| fwListNaviBtn1 |  | 1 |
-| fwListNaviBtn2 |  | 2 |
-| fwListNaviBtn3 |  | 3 |
-| fwListNaviBtn4 |  | 4 |
-| fwListNaviBtn5 |  | 5 |
-| fwListNaviBtn6 |  | 6 |
-| fwListNaviBtnNext |  | 次へ＞ |
+| fwListNaviBtnPrev | クリックで`fwListNowPage-1`ページを表示 | ＜前へ |
+| fwListNaviBtn1 |  | `fwListLeftPage + 0` |
+| fwListNaviBtn2 |  | `fwListLeftPage + 1` |
+| fwListNaviBtn3 |  | `fwListLeftPage + 2` |
+| fwListNaviBtn4 |  | `fwListLeftPage + 3` |
+| fwListNaviBtn5 |  | `fwListLeftPage + 4` |
+| fwListNaviBtn6 |  | `fwListLeftPage + 5` |
+| fwListNaviBtnNext | クリックで`fwListNowPage+1`ページを表示 | 次へ＞ |
 | fwListNaviSortBtm | 並び順ボトム | 1: 受付年月日順(デフォルト)<br>2: 紹介期限日順 |
 | fwListNaviDispBtm | 表示件数ボトム | 10: 10件<br>30: 30件(デフォルト)<br>50: 50件 |
 | fwListNowPage | 現在のページ | 5 |
