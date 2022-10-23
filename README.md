@@ -26,7 +26,7 @@ curl 'https://hellowork-mhlw.vercel.app/api?siku1Hidden=13101&format=json' | jq
 ```
 
 ### ページネーション
-5ページ目`fwListLeftPage=5`を表示
+5ページ目`fwListLeftPage=5`
 ```bash
 curl -c 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep 件を表示
 curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&screenId=GECA110010&maba_vrbs' | grep 件を表示
