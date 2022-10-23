@@ -18,6 +18,11 @@ curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&
 curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&siku1Hidden=13101&searchBtn=&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
+via Proxy
+```bash
+curl 'https://hellowork-mhlw.vercel.app/api?siku1Hidden=13101&format=json'
+```
+
 ## 検索パラメータ
 
 | 名前 | 説明 | 値 |
