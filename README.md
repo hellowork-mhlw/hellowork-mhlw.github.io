@@ -1,5 +1,7 @@
 # ハローワーク
 
+## 検索パラメータ
+
 | 名前 | 説明 | 値 |
 | --- | --- | --- |
 | kSNoJo | 求職番号上 |  |
@@ -52,3 +54,29 @@
 | codeAssistDivide | コード一覧入力支援区切り |  |
 | maba_vrbs | ボタンリスト | infTkRiyoDantaiBtn,searchShosaiBtn, searchBtn,searchNoBtn,searchClearBtn, dispDetailBtn,kyujinhyoBtn |
 | preCheckFlg | 事前確認フラグ | false |
+
+## 略語
+
+| 略 | 意味 |
+| --- | --- |
+| kS | 求職(kyuShoku) |
+| No | 番号(Number) |
+| Jo | 上(Jo) |
+| Chuu | 中(Chuu) |
+| Ge | 下(Ge) |
+| kj | 求人(KyuJin) |
+| Kbn | 区分(Kubun) |
+| tDFK | 都道府県(toDoFuKen) |
+| Cmb | コンボ(Combo) |
+| sKGYBRUI | 職業分類(syoKuGYoBunRUI) |
+| nOTKNSK | NOT検索(nOTKeNSaKu) |
+| Btn | ボタン(Button) |
+| jGSH | 事業所(jiGyoSHo) |
+| iNF | 情報(iNFo) |
+| siku | 市区(siku) |
+| SKSU | 職種(SyoKuSyU) |
+| summary | 求人情報(summary) |
+| Disp | 表示(Display) |
+| maba | ? |
+| vrbs | ? |
+| Flg | フラグ(Flag) |
