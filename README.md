@@ -9,13 +9,13 @@ curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&
 ```
 
 ### フリーワード
-
+`freeWordInput=公共職業安定所`
 ```bash
 curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&freeWordInput=公共職業安定所&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
 ### 就業場所
-東京都(13)千代田区(101)
+東京都(13)千代田区(101)`siku1Hidden=13101`
 ```bash
 curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&siku1Hidden=13101&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
