@@ -70,7 +70,7 @@ curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&
 | codeAssistItemCode | コード一覧入力支援アイテムコード |  |
 | codeAssistItemName | コード一覧入力支援アイテム名 |  |
 | codeAssistDivide | コード一覧入力支援区切り |  |
-| maba_vrbs | ボタンリスト | infTkRiyoDantaiBtn: 情報提供利用団体ＩＤを設定<br>searchShosaiBtn: 詳細検索条件<br>searchBtn: 検索<br>searchNoBtn: 番号検索<br>searchClearBtn: 検索条件をクリア<br>dispDetailBtn: 詳細を表示<br>kyujinhyoBtn: 求人票を表示 |
+| maba_vrbs | ボタンリスト | infTkRiyoDantaiBtn: 情報提供利用団体IDを設定<br>searchShosaiBtn: 詳細検索条件<br>searchBtn: 検索<br>searchNoBtn: 番号検索<br>searchClearBtn: 検索条件をクリア<br>dispDetailBtn: 詳細を表示<br>kyujinhyoBtn: 求人票を表示 |
 | preCheckFlg | 事前確認フラグ | false |
 
 ## 略語
