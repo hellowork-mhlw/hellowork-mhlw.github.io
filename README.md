@@ -29,12 +29,12 @@ curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&
 | tDFK1CmbBox | 都道府県1 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) |
 | tDFK2CmbBox | 都道府県2 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) |
 | tDFK3CmbBox | 都道府県3 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) |
-| sKGYBRUIJo1 | 職業分類1上 |  |
-| sKGYBRUIGe1 | 職業分類1下 |  |
-| sKGYBRUIJo2 | 職業分類2上 |  |
-| sKGYBRUIGe2 | 職業分類2下 |  |
-| sKGYBRUIJo3 | 職業分類3上 |  |
-| sKGYBRUIGe3 | 職業分類3下 |  |
+| sKGYBRUIJo1 | 職業分類1上 | 半角数字3桁 |
+| sKGYBRUIGe1 | 職業分類1下 | 半角数字2桁 |
+| sKGYBRUIJo2 | 職業分類2上 | 半角数字3桁 |
+| sKGYBRUIGe2 | 職業分類2下 | 半角数字2桁 |
+| sKGYBRUIJo3 | 職業分類3上 | 半角数字3桁 |
+| sKGYBRUIGe3 | 職業分類3下 | 半角数字2桁 |
 | freeWordInput | フリーワード | 全角50文字以内 |
 | nOTKNSKFreeWordInput | NOT検索フリーワード | 全角50文字以内 |
 | searchBtn | 検索ボタン | 検索 |
