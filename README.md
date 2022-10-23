@@ -23,6 +23,12 @@ via Proxy
 curl 'https://hellowork-mhlw.vercel.app/api?siku1Hidden=13101&format=json'
 ```
 
+### ページネーション
+
+```bash
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&searchBtn=&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+```
+
 ## 検索パラメータ
 
 | 名前 | 説明 | 値 |
