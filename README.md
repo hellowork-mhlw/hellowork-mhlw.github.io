@@ -22,7 +22,7 @@ curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&
 
 via Proxy
 ```bash
-curl 'https://hellowork-mhlw.vercel.app/api?siku1Hidden=13101&format=json'
+curl 'https://hellowork-mhlw.vercel.app/api?siku1Hidden=13101&format=json' | jq
 ```
 
 ### ページネーション
