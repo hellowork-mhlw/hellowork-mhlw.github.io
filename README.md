@@ -1,5 +1,11 @@
 # ハローワーク
 
+## 検索
+
+```bash
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&searchBtn=&screenId=GECA110010&maba_vrbs=searchBtn' | grep 件を表示
+```
+
 ## 検索パラメータ
 
 | 名前 | 説明 | 値 |
