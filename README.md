@@ -89,7 +89,7 @@ curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListN
 | fwListNaviDisp | 表示件数 | 10: 10件<br>30: 30件(デフォルト)<br>50: 50件 |
 | fwListNaviSort | 並び順 | 1: 受付年月日順(デフォルト)<br>2: 紹介期限日順 |
 | iNFTeikyoRiyoDantaiID | 情報提供利用団体ID | 半角数字6桁以内 |
-| searchClear | 検索条件をクリアを押下するとJSで遷移なしに設定 | 0: 未押下<br>1: 押下済 |
+| searchClear | `検索条件をクリア`を押下するとJSで遷移なしに設定 | 0: 未押下<br>1: 押下済 |
 | siku1Hidden | 市区町村1 | 半角数字5桁 |
 | siku2Hidden | 市区町村2 | 半角数字5桁 |
 | siku3Hidden | 市区町村3 | 半角数字5桁 |
