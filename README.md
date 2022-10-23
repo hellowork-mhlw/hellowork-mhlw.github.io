@@ -121,6 +121,9 @@ curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListN
 | nOTKNSK | NOT検索(nOTKeNSaKu) |
 | Btn | ボタン(Button) |
 | jGSH | 事業所(jiGyoSHo) |
+| fw | フレームワーク?(framework) |
+| Navi | ナビゲーション(Navigation) |
+| Btm | ボトム(Bottom) |
 | iNF | 情報(iNFo) |
 | siku | 市区(siku) |
 | SKSU | 職種(SyoKuSyU) |
