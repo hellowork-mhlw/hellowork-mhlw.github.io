@@ -65,7 +65,24 @@ curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListN
 | jGSHNoJo | 事業所番号上 | 半角数字4桁 |
 | jGSHNoChuu | 事業所番号中 | 半角数字6桁以内 |
 | jGSHNoGe | 事業所番号下 | 1桁 |
-| kyujinkensu | 求人件数 | 0 |
+| kyujinkensu | 求人件数 | 1227618 |
+| fwListNaviSortTop | 並び順トップ | 1: 受付年月日順(デフォルト)<br>2: 紹介期限日順 |
+| fwListNaviDispTop | 表示件数トップ | 10: 10件<br>30: 30件(デフォルト)<br>50: 50件 |
+| fwListNaviBtnPrev |  | ＜前へ |
+| fwListNaviBtn1 |  | 1 |
+| fwListNaviBtn2 |  | 2 |
+| fwListNaviBtn3 |  | 3 |
+| fwListNaviBtn4 |  | 4 |
+| fwListNaviBtn5 |  | 5 |
+| fwListNaviBtn6 |  | 6 |
+| fwListNaviBtnNext |  | 次へ＞ |
+| fwListNaviSortBtm | 並び順ボトム | 1: 受付年月日順(デフォルト)<br>2: 紹介期限日順 |
+| fwListNaviDispBtm | 表示件数ボトム | 10: 10件<br>30: 30件(デフォルト)<br>50: 50件 |
+| fwListNowPage | 現在のページ | 5 |
+| fwListLeftPage | 一番左のページ | 1 |
+| fwListNaviCount | リンクの数 | 7 |
+| fwListNaviDisp | 表示件数 | 10: 10件<br>30: 30件(デフォルト)<br>50: 50件 |
+| fwListNaviSort | 並び順 | 1: 受付年月日順(デフォルト)<br>2: 紹介期限日順 |
 | iNFTeikyoRiyoDantaiID | 情報提供利用団体ID | 半角数字6桁以内 |
 | searchClear | 検索クリア | 0 |
 | siku1Hidden | 市区町村1 | 半角数字5桁 |
