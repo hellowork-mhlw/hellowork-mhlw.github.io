@@ -1,5 +1,7 @@
 # [ハローワーク](https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do?action=initDisp&screenId=GECA110010)
 
+*This is not an officially supported Hellowork product.*
+
 ## 検索
 
 ```bash
