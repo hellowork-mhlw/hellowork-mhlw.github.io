@@ -1,7 +1,5 @@
 import fetch from 'node-fetch';
 
 export default function handler(req, res) {
-  console.log(fetch);
-  const { name = 'World' } = req.query;
-  return res.send(`Hello ${name}!`);
+  fetch('http://httpbin.org/ip').then(r => r.body.pipe(res))
 }
