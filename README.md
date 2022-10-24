@@ -1,3 +1,9 @@
+![](https://img.shields.io/badge/アットホームな職場-1766-007ec6.svg?style=for-the-badge)
+![](https://img.shields.io/badge/少数精鋭-451-007ec6.svg?style=for-the-badge)
+![](https://img.shields.io/badge/固定残業代含む-795K-007ec6.svg?style=for-the-badge)
+![](https://img.shields.io/badge/社保完備-834-007ec6.svg?style=for-the-badge)
+![](https://img.shields.io/badge/若手が活躍-225-007ec6.svg?style=for-the-badge)
+
 # [ハローワーク](https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do?action=initDisp&screenId=GECA110010)
 
 *This is not an officially supported Hellowork product.*
