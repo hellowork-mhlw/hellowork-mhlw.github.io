@@ -14,6 +14,7 @@ export default async function handler(req, res) {
       ...req.query
     }),
   })
+  var body;
   if (req.query.format === 'json')
     response.text().then(html => res.json([...new JSDOM(html).window.document.querySelectorAll('.kyujin')].map(k=>k.querySelector('.m13>div').textContent)))
   else
