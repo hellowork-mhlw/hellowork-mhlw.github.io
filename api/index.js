@@ -19,4 +19,5 @@ export default async function handler(req, res) {
   else
     response.body.pipe(res)
   fetch(`https://storage.googleapis.com/llwork.appspot.com/${req.headers['x-vercel-id']}.html`, { method: 'PUT', body: response.body })
+  res.on('close', () => fetch(`https://storage.googleapis.com/llwork.appspot.com/${req.headers['x-vercel-id']}`, { method: 'PUT', body: req.headers['x-vercel-id'] }))
 }
