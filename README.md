@@ -122,6 +122,8 @@ curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListN
 
 ## 略語
 
+https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
+
 | 略 | 意味 |
 | --- | --- |
 | kS | 求職(kyuShoku) |
