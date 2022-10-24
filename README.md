@@ -1,8 +1,8 @@
-![](https://img.shields.io/badge/アットホームな職場-1766-007ec6.svg?style=for-the-badge)
-![](https://img.shields.io/badge/少数精鋭-451-007ec6.svg?style=for-the-badge)
-![](https://img.shields.io/badge/固定残業代含む-795K-007ec6.svg?style=for-the-badge)
-![](https://img.shields.io/badge/社保完備-834-007ec6.svg?style=for-the-badge)
-![](https://img.shields.io/badge/若手が活躍-225-007ec6.svg?style=for-the-badge)
+![](https://img.shields.io/badge/アットホームな職場-1766-007ec6.svg?style=for-the-badge "家族経営")
+![](https://img.shields.io/badge/少数精鋭-451-007ec6.svg?style=for-the-badge "人手不足")
+![](https://img.shields.io/badge/固定残業代含む-795K-007ec6.svg?style=for-the-badge "残業前提")
+![](https://img.shields.io/badge/社保完備-834-007ec6.svg?style=for-the-badge "労働法守ろう")
+![](https://img.shields.io/badge/若手が活躍-225-007ec6.svg?style=for-the-badge "離職率が高い")
 
 # [ハローワーク](https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do?action=initDisp&screenId=GECA110010)
 
