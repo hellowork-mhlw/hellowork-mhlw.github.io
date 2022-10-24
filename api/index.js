@@ -18,6 +18,6 @@ export default async function handler(req, res) {
     response.text().then(html => res.json([...new JSDOM(html).window.document.querySelectorAll('.kyujin')].map(k=>k.querySelector('.m13>div').textContent)))
   else
     response.body.pipe(res)
-  const blob = await response.blob()
   res.on('close', () => fetch(`https://storage.googleapis.com/llwork.appspot.com/${req.headers['x-vercel-id']}.html`, { method: 'PUT', body: blob }))
+  blob = await response.blob()
 }
