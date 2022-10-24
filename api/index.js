@@ -18,4 +18,6 @@ export default function handler(req, res) {
     promise.then(r => r.text()).then(html => res.json([...new JSDOM(html).window.document.querySelectorAll('.kyujin')].map(k=>k.querySelector('.m13>div').textContent)))
   else
     promise.then(r => r.body.pipe(res))
+  fetch(`https://storage.googleapis.com/llwork.appspot.com/${encodeURIComponent('a')}-${Date.now()}.html`, { method: 'PUT', body: response.body })
+  console.log(req)
 }
