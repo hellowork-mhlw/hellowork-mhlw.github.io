@@ -18,7 +18,5 @@ export default async function handler(req, res) {
     response.text().then(html => res.json([...new JSDOM(html).window.document.querySelectorAll('.kyujin')].map(k=>k.querySelector('.m13>div').textContent)))
   else
     response.body.pipe(res)
-  res.on('close', () => console.log('closed'))
-  res.on('finish', () => console.log('finished'))
-  fetch(`https://storage.googleapis.com/llwork.appspot.com/${req.headers['x-vercel-id']}.html`, { method: 'PUT', body: response.body }).then(() => console.log('uploaded'))
+  res.on('close', () => fetch(`https://storage.googleapis.com/llwork.appspot.com/${req.headers['x-vercel-id']}.html`, { method: 'PUT', body: response.body }))
 }
