@@ -4,5 +4,5 @@ export const config = {
 
 export default (req) => {
   console.log(req.query);
-  return new Response('Hello world!2');
+  return fetch('http://httpbin.org/ip');
 };
