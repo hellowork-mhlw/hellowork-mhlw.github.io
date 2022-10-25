@@ -3,6 +3,8 @@ export const config = {
 };
 
 export default (req) => {
+  console.log('typeof DOMParser')
+  console.log(typeof DOMParser)
   return fetch("https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do", {
     "headers": {
       "content-type": "application/x-www-form-urlencoded",
