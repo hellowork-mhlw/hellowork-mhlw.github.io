@@ -3,6 +3,6 @@ export const config = {
 };
 
 export default (req) => {
-  console.log(req);
+  console.log(req.query);
   return new Response('Hello world!2');
 };
