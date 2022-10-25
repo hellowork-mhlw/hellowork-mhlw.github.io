@@ -3,7 +3,6 @@ export const config = {
 };
 
 export default (req) => {
-  console.log(req.url);
   return fetch("https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do", {
     "headers": {
       "content-type": "application/x-www-form-urlencoded",
@@ -13,7 +12,8 @@ export default (req) => {
       searchBtn: '',
       screenId: 'GECA110010',
       maba_vrbs: 'searchBtn',
-      fwListNaviDisp: 50
+      fwListNaviDisp: 50,
+      ...Object.fromEntries(new URL(req.url).searchParams)
     }),
     "method": "POST",
   });
