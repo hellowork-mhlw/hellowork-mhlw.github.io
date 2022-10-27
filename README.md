@@ -160,6 +160,9 @@ https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
 
 ![image](https://user-images.githubusercontent.com/116468267/197379409-3c04d9df-6ba0-4eb9-bc64-b7693e918eb5.png)
 
+公開範囲:`３．事業所名等を含まない求人情報を公開する`の場合、ハローワークの窓口で事業所名や電話番号が公開された求人票を出力できます。
+あやしい事業所ではなく、いたずら電話を防いだりするために公開していない場合があるそうです。
+
 その他ご質問は、[こちら](https://github.com/hellowork-mhlw/hellowork-mhlw.github.io/discussions/new)から
 
 [^1]: https://hoken.hellowork.mhlw.go.jp/assist/001000.do?screenId=001000&action=koyohohiLicenceLink
