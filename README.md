@@ -163,6 +163,9 @@ https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
 公開範囲が`３．事業所名等を含まない求人情報を公開する`の場合、ハローワークの窓口で事業所名や電話番号が公開された求人票を出力できます。
 あやしい事業所ではなく、いたずら電話を防いだりするために公開していない場合があるそうです。
 
+### 紹介期限日
+申し込みをした月の翌々月末が紹介期限となります。ただし、それよりも前に紹介期限日を設定することもできます。あらかじめ採用期限日が決まってる場合など
+
 その他ご質問は、[こちら](https://github.com/hellowork-mhlw/hellowork-mhlw.github.io/discussions/new)から
 
 [^1]: https://hoken.hellowork.mhlw.go.jp/assist/001000.do?screenId=001000&action=koyohohiLicenceLink
