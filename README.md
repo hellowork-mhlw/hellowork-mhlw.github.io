@@ -192,3 +192,6 @@ https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
 
 [^1]: https://hoken.hellowork.mhlw.go.jp/assist/001000.do?screenId=001000&action=koyohohiLicenceLink
 [^2]: チェックボックスは複数設定できます。
+```bash
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&newArrivedCKBox=1&newArrivedCKBox=2&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+```
