@@ -71,9 +71,9 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | kSNoJo | 求職番号上 | 半角数字5桁 |
 | kSNoGe | 求職番号下 | 半角数字8桁以内 |
 | kjKbnRadioBtn | 求人区分 | 1: 一般求人<br>2: 新卒・既卒求人<br>3: 季節求人<br>4: 出稼ぎ求人<br>5: 障害のある方のための求人 |
-| ippanCKBox | 一般チェックボックス | 1: フルタイム<br>2: パート |
+| ippanCKBox | 一般チェックボックス[^2] | 1: フルタイム<br>2: パート |
 | nenreiInput | 年齢 | 0~99 |
-| nenreiCKBox | 年齢チェックボックス | 1: 不問のみ<br>2: 不問をのぞく |
+| nenreiCKBox | 年齢チェックボックス[^2] | 1: 不問のみ<br>2: 不問をのぞく |
 | tDFK1CmbBox | 都道府県1 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
 | tDFK2CmbBox | 都道府県2 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
 | tDFK3CmbBox | 都道府県3 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
@@ -83,9 +83,9 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | sKGYBRUIGe2 | 職業分類2下 | 半角数字2桁 |
 | sKGYBRUIJo3 | 職業分類3上 | 半角数字3桁 |
 | sKGYBRUIGe3 | 職業分類3下 | 半角数字2桁 |
-| koyoFltmCKBox | 雇用フルタイムチェックボックス | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
-| koyoPartCKBox | 雇用パートチェックボックス | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
-| newArrivedCKBox | 新着チェックボックス | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
+| koyoFltmCKBox | 雇用フルタイムチェックボックス[^2] | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
+| koyoPartCKBox | 雇用パートチェックボックス[^2] | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
+| newArrivedCKBox | 新着チェックボックス[^2] | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
 | freeWordRadioBtn | フリーワードラジオボタン | 1: OR検索<br>2: AND検索 |
 | freeWordInput | フリーワード | 全角50文字以内 |
 | nOTKNSKFreeWordInput | NOT検索フリーワード | 全角50文字以内 |
@@ -190,3 +190,4 @@ https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
 その他ご質問は、[こちら](https://github.com/hellowork-mhlw/hellowork-mhlw.github.io/discussions/new)から
 
 [^1]: https://hoken.hellowork.mhlw.go.jp/assist/001000.do?screenId=001000&action=koyohohiLicenceLink
+[^2]: チェックボックスは複数設定できます。
