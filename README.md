@@ -184,11 +184,11 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | hynaKikntFumonCKBox | 必要な経験等不問 | 1 |
 | hynaMenkyoSkkuFumonCKBox | 必要な免許・資格不問 | 1 |
 | jdsMenkyoCKBox | 普通自動車運転免許 | 1: 必須<br>2: あれば尚可<br>3: AT限定可<br>4: 必須・あれば尚可をのぞく |
-| menkyoSkku1In | 免許・資格1 | 0~9999 |
+| menkyoSkku1In | 免許・資格1 | 1001~9999: [免許・資格コード一覧](https://www.hellowork.mhlw.go.jp/info/license_list01.html) |
 | menkyoSkkuNo1CKBox | 免許・資格のぞく1 | 1 |
-| menkyoSkku2In | 免許・資格2 | 0~9999 |
+| menkyoSkku2In | 免許・資格2 | 1001~9999: [免許・資格コード一覧](https://www.hellowork.mhlw.go.jp/info/license_list01.html) |
 | menkyoSkkuNo2CKBox | 免許・資格のぞく2 | 1 |
-| menkyoSkku3In | 免許・資格3 | 0~9999 |
+| menkyoSkku3In | 免許・資格3 | 1001~9999: [免許・資格コード一覧](https://www.hellowork.mhlw.go.jp/info/license_list01.html) |
 | menkyoSkkuNo3CKBox | 免許・資格のぞく3 | 1 |
 | sonotaCKBox | その他 | 1: 書類選考なし<br>2: 正社員登用あり<br>3: マイカー通勤可<br>4: 転勤の可能性なし<br>5: 在宅勤務<br>6: 駅近（最寄り駅から徒歩１０分以内）<br>7: 受動喫煙対策あり<br>8: トライアル雇用併用求人<br>9: UIJターン歓迎求人 |
 | screenId | 画面ID | GECA110030 |
