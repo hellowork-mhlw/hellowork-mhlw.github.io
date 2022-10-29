@@ -73,7 +73,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | kjKbnRadioBtn | 求人区分 | 1: 一般求人<br>2: 新卒・既卒求人<br>3: 季節求人<br>4: 出稼ぎ求人<br>5: 障害のある方のための求人 |
 | ippanCKBox | 一般チェックボックス[^2] | 1: フルタイム<br>2: パート |
 | sGSYACKBox | 障がい者チェックボックス[^2] | 1: フルタイム<br>2: パート |
-| nenreiInput | 年齢 | 0~99 |
+| nenreiInput | 年齢 | 0~99[^3] |
 | nenreiCKBox | 年齢チェックボックス[^2] | 1: 不問のみ<br>2: 不問をのぞく |
 | tDFK1CmbBox | 都道府県1 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
 | tDFK2CmbBox | 都道府県2 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
@@ -192,3 +192,4 @@ https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
 
 [^1]: https://hoken.hellowork.mhlw.go.jp/assist/001000.do?screenId=001000&action=koyohohiLicenceLink
 [^2]: チェックボックスは複数設定できます。
+[^3]: 100歳以上の方の労働はお断りさせていただきます。
