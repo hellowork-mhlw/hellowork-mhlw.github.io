@@ -177,9 +177,9 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | jgshMeiIn | 事業所名 | 全角60文字以内 |
 | nozokuCKBox | のぞく | 1 |
 | jginSuRadioBtn | 従業員数 | 0: 指定しない<br>1: 10人以上<br>2: 100人以上<br>3: 300人以上<br>4: 1000人以上 |
-| kiboSuruSngBrui1In | 希望する産業分類1 | 0~99 |
-| kiboSuruSngBrui2In | 希望する産業分類2 | 0~99 |
-| kiboSuruSngBrui3In | 希望する産業分類3 | 0~99 |
+| kiboSuruSngBrui1In | 希望する産業分類1 | 01~99: [産業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/industry_list02.html) |
+| kiboSuruSngBrui2In | 希望する産業分類2 | 01~99: [産業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/industry_list02.html) |
+| kiboSuruSngBrui3In | 希望する産業分類3 | 01~99: [産業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/industry_list02.html) |
 | grkiFumonCKBox | 学歴不問 | 1 |
 | hynaKikntFumonCKBox | 必要な経験等不問 | 1 |
 | hynaMenkyoSkkuFumonCKBox | 必要な免許・資格不問 | 1 |
