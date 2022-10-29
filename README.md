@@ -78,12 +78,12 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | tDFK1CmbBox | 都道府県1 | 01~47: [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf)<br>59: 海外 |
 | tDFK2CmbBox | 都道府県2 | 01~47: [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf)<br>59: 海外 |
 | tDFK3CmbBox | 都道府県3 | 01~47: [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf)<br>59: 海外 |
-| sKGYBRUIJo1 | 職業分類1上 | 半角数字3桁 |
-| sKGYBRUIGe1 | 職業分類1下 | 半角数字2桁 |
-| sKGYBRUIJo2 | 職業分類2上 | 半角数字3桁 |
-| sKGYBRUIGe2 | 職業分類2下 | 半角数字2桁 |
-| sKGYBRUIJo3 | 職業分類3上 | 半角数字3桁 |
-| sKGYBRUIGe3 | 職業分類3下 | 半角数字2桁 |
+| sKGYBRUIJo1 | 職業分類1上 | 半角数字3桁 [職業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/mhlw_job_dictionary.html) |
+| sKGYBRUIGe1 | 職業分類1下 | 半角数字2桁 [職業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/mhlw_job_dictionary.html) |
+| sKGYBRUIJo2 | 職業分類2上 | 半角数字3桁 [職業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/mhlw_job_dictionary.html) |
+| sKGYBRUIGe2 | 職業分類2下 | 半角数字2桁 [職業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/mhlw_job_dictionary.html) |
+| sKGYBRUIJo3 | 職業分類3上 | 半角数字3桁 [職業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/mhlw_job_dictionary.html) |
+| sKGYBRUIGe3 | 職業分類3下 | 半角数字2桁 [職業分類コード一覧](https://www.hellowork.mhlw.go.jp/info/mhlw_job_dictionary.html) |
 | koyoFltmCKBox | 雇用フルタイム[^2] | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
 | koyoPartCKBox | 雇用パート[^2] | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
 | newArrivedCKBox | 新着[^2] | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
