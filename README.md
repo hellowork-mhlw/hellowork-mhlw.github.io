@@ -71,8 +71,8 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | kSNoJo | 求職番号上 | 半角数字5桁 |
 | kSNoGe | 求職番号下 | 半角数字8桁以内 |
 | kjKbnRadioBtn | 求人区分 | 1: 一般求人<br>2: 新卒・既卒求人<br>3: 季節求人<br>4: 出稼ぎ求人<br>5: 障害のある方のための求人 |
-| ippanCKBox | 一般チェックボックス[^2] | 1: フルタイム<br>2: パート |
-| sGSYACKBox | 障がい者チェックボックス[^2] | 1: フルタイム<br>2: パート |
+| ippanCKBox | 一般[^2] | 1: フルタイム<br>2: パート |
+| sGSYACKBox | 障がい者[^2] | 1: フルタイム<br>2: パート |
 | nenreiInput | 年齢 | 0~99[^3] |
 | nenreiCKBox | 年齢チェックボックス[^2] | 1: 不問のみ<br>2: 不問をのぞく |
 | tDFK1CmbBox | 都道府県1 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
@@ -84,10 +84,10 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | sKGYBRUIGe2 | 職業分類2下 | 半角数字2桁 |
 | sKGYBRUIJo3 | 職業分類3上 | 半角数字3桁 |
 | sKGYBRUIGe3 | 職業分類3下 | 半角数字2桁 |
-| koyoFltmCKBox | 雇用フルタイムチェックボックス[^2] | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
-| koyoPartCKBox | 雇用パートチェックボックス[^2] | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
-| newArrivedCKBox | 新着チェックボックス[^2] | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
-| freeWordRadioBtn | フリーワードラジオボタン | 0: OR検索<br>1: AND検索 |
+| koyoFltmCKBox | 雇用フルタイム[^2] | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
+| koyoPartCKBox | 雇用パート[^2] | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
+| newArrivedCKBox | 新着[^2] | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
+| freeWordRadioBtn | フリーワード | 0: OR検索<br>1: AND検索 |
 | freeWordInput | フリーワード | 全角50文字以内 |
 | nOTKNSKFreeWordInput | NOT検索フリーワード | 全角50文字以内 |
 | searchBtn | 検索ボタン | 検索 |
@@ -142,6 +142,61 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | codeAssistDivide | コード一覧入力支援区切り |  |
 | maba_vrbs | ボタンリスト(カンマ区切り) | infTkRiyoDantaiBtn: 情報提供利用団体IDを設定<br>searchShosaiBtn: 詳細検索条件<br>searchBtn: 検索<br>searchNoBtn: 番号検索<br>searchClearBtn: 検索条件をクリア<br>dispDetailBtn: 詳細を表示<br>kyujinhyoBtn: 求人票を表示<br>commonDownload: 様式のみ印刷[^1]<br>inputPrintButton: 内容を入力して印刷[^1] |
 | preCheckFlg | 事前確認フラグ | false |
+
+## 検索詳細パラメータ
+
+| 名前 | 説明 | 値 |
+| --- | --- | --- |
+| gkkyIn | 月給 | 0~99999999 |
+| tatZngyCKBox | 手当・固定残業代を含む | 1 |
+| shoyoAriCKBox | 賞与あり | 1 |
+| shgJnStaJiCmbBoxHH | 就業時間開始(時) | 00~23 |
+| shgJnStaFunCmbBoxMM | 就業時間開始(分) | 00,10,20,30,40,50 |
+| shgJnEndJiCmbBoxHH | 就業時間終了(時) | 00~23 |
+| shgJnEndFunCmbBoxMM | 就業時間終了(分) | 00,10,20,30,40,50 |
+| kiboShgJnCKBox | 希望する就業時間 | 1: 交代制（シフト制）を含まない<br>2: 裁量労働制を含まない<br>3: 変形労働時間制を含まない |
+| jkgiRadioBtn | 時間外 | 0: 指定しない<br>1: あり<br>2: なし |
+| thkin | 月平均残業時間 | 0~99 |
+| holidayCKBox | 休日 | 1: 月曜日<br>2: 火曜日<br>3: 水曜日<br>4: 木曜日<br>5: 金曜日<br>6: 土曜日<br>7: 日曜日<br>8: 祝日 |
+| shukFtskRadioBtn | 週休二日 | 0: 指定しない<br>1: 毎週<br>2: その他 |
+| nenkanKjsu | 年間休日数 | 0~999 |
+| hakenUkeoinCKBox | 派遣・請負 | 1: 派遣<br>2: 請負<br>3: 派遣・請負を含まない |
+| kanyuHknCKBox | 加入保険 | 1: 雇用保険<br>2: 労災保険<br>3: 健康保険<br>4: 厚生年金<br>5: 公務災害補償<br>6: 財形<br>7: 企業年金<br>8: 退職金制度<br>9: 退職金共済 |
+| keiyakuKsnNoKnsiAriCKBox | 契約更新の可能あり | 1 |
+| knsiAriCKBox | 更新あり | 1: 原則更新<br>2: 条件あり |
+| tnseiRadioBtn | 定年制 | 0: 指定しない<br>1: あり<br>2: なし |
+| tnseiCmbBox | 定年制 | 60~70 |
+| nyukyoKaCKBox | 入居可能住宅 | 1: 単身用あり<br>2: 世帯用あり |
+| riyoKanoNaTjsAriCKBox | 利用可能な託児施設 | 1 |
+| ensn11CmbBox | 沿線 | 001~999 |
+| ensn12CmbBox | 沿線 | 001~999 |
+| jgshMeiIn | 事業所名 | 全角60文字以内 |
+| nozokuCKBox | のぞく | 1 |
+| jginSuRadioBtn | 従業員数 | 0: 指定しない<br>1: 10人以上<br>2: 100人以上<br>3: 300人以上<br>4: 1000人以上 |
+| kiboSuruSngBrui1In | 希望する産業分類1 | 0~99 |
+| kiboSuruSngBrui2In | 希望する産業分類2 | 0~99 |
+| kiboSuruSngBrui3In | 希望する産業分類3 | 0~99 |
+| grkiFumonCKBox | 学歴不問 | 1 |
+| hynaKikntFumonCKBox | 必要な経験等不問 | 1 |
+| hynaMenkyoSkkuFumonCKBox | 必要な免許・資格不問 | 1 |
+| jdsMenkyoCKBox | 普通自動車運転免許 | 1: 必須<br>2: あれば尚可<br>3: AT限定可<br>4: 必須・あれば尚可をのぞく |
+| menkyoSkku1In | 免許・資格1 | 0~9999 |
+| menkyoSkkuNo1CKBox | 免許・資格のぞく1 | 1 |
+| menkyoSkku2In | 免許・資格2 | 0~9999 |
+| menkyoSkkuNo2CKBox | 免許・資格のぞく2 | 1 |
+| menkyoSkku3In | 免許・資格3 | 0~9999 |
+| menkyoSkkuNo3CKBox | 免許・資格のぞく3 | 1 |
+| sonotaCKBox | その他 | 1: 書類選考なし<br>2: 正社員登用あり<br>3: マイカー通勤可<br>4: 転勤の可能性なし<br>5: 在宅勤務<br>6: 駅近（最寄り駅から徒歩１０分以内）<br>7: 受動喫煙対策あり<br>8: トライアル雇用併用求人<br>9: UIJターン歓迎求人 |
+| screenId | 画面ID | GECA110030 |
+| action | アクション | searchShosaiBtn: 詳細検索<br>saveCondBtn: OK |
+| codeAssistType | コード一覧入力支援タイプ |  |
+| codeAssistKind | コード一覧入力支援カインド |  |
+| codeAssistCode | コード一覧入力支援コード |  |
+| codeAssistItemCode | コード一覧入力支援アイテムコード |  |
+| codeAssistItemName | コード一覧入力支援アイテム名 |  |
+| codeAssistDivide | コード一覧入力支援区切り |  |
+| maba_vrbs | ボタンリスト(カンマ区切り) | saveCondBtn: OK<br>searchShsiClearBtn: 詳細検索条件をクリア |
+| preCheckFlg | 事前確認フラグ | true |
 
 ## 略語
 
