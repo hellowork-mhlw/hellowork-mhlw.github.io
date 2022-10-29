@@ -200,6 +200,24 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 
 ## 沿線一覧
 
+<details>
+<summary>沿線一覧取得</summary>
+```javascript
+// https://www.hellowork.mhlw.go.jp 配下で実行する必要があいます
+const chunk = (arr, n) => arr.length ? [arr.slice(0, n), ...chunk(arr.slice(n), n)] : [];
+const paramsList = chunk([...Array(47).keys()].map(i => (i + 1).toString().padStart(2, 0)), 3).map(c => ({ screenId: 'GECA110010', action: 'searchShosaiBtn', ...Object.fromEntries(c.map((n, i) => [`tDFK${i + 1}CmbBox`, n])) }))
+const htmls = []
+for await (const params of paramsList) {
+    htmls.push(await fetch('https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do', { method: 'POST', body: new URLSearchParams(params) }).then(r => r.text()))
+    await new Promise(resolve => setTimeout(resolve, 3000))
+}
+
+
+const options = htmls.flatMap(html=>[...new DOMParser().parseFromString(html,'text/html').querySelectorAll('#ID_ensn11CmbBox, #ID_ensn12CmbBox, #ID_ensn21CmbBox, #ID_ensn22CmbBox, #ID_ensn31CmbBox, #ID_ensn32CmbBox')].flatMap(select => [...select.options]))
+copy(Object.entries(options.reduce((obj, o) => (obj[o.value] = o.textContent, obj), {})).filter(e=>e[0]).sort((a, b) => a[0]-b[0]).map(e => `| ${e[0]} | ${e[1]} |`).join('\n'))
+```
+</details>
+
 | 値 | 沿線 |
 | --- | --- |
 | 001 | 山手線（大崎～駒込） |
