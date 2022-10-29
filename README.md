@@ -72,6 +72,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | kSNoGe | 求職番号下 | 半角数字8桁以内 |
 | kjKbnRadioBtn | 求人区分 | 1: 一般求人<br>2: 新卒・既卒求人<br>3: 季節求人<br>4: 出稼ぎ求人<br>5: 障害のある方のための求人 |
 | ippanCKBox | 一般チェックボックス[^2] | 1: フルタイム<br>2: パート |
+| sGSYACKBox | 障がい者チェックボックス[^2] | 1: フルタイム<br>2: パート |
 | nenreiInput | 年齢 | 0~99 |
 | nenreiCKBox | 年齢チェックボックス[^2] | 1: 不問のみ<br>2: 不問をのぞく |
 | tDFK1CmbBox | 都道府県1 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
@@ -86,7 +87,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | koyoFltmCKBox | 雇用フルタイムチェックボックス[^2] | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
 | koyoPartCKBox | 雇用パートチェックボックス[^2] | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
 | newArrivedCKBox | 新着チェックボックス[^2] | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
-| freeWordRadioBtn | フリーワードラジオボタン | 1: OR検索<br>2: AND検索 |
+| freeWordRadioBtn | フリーワードラジオボタン | 0: OR検索<br>1: AND検索 |
 | freeWordInput | フリーワード | 全角50文字以内 |
 | nOTKNSKFreeWordInput | NOT検索フリーワード | 全角50文字以内 |
 | searchBtn | 検索ボタン | 検索 |
