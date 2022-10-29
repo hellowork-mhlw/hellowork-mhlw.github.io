@@ -202,6 +202,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 
 <details>
 <summary>沿線一覧取得</summary>
+
 ```javascript
 // https://www.hellowork.mhlw.go.jp 配下で実行する必要があいます
 const chunk = (arr, n) => arr.length ? [arr.slice(0, n), ...chunk(arr.slice(n), n)] : [];
