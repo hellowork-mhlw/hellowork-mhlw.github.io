@@ -45,7 +45,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110030.do -d'shoyoAriCK
 curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
-島根県(32)`tDFK1CmbBox=32`で土日祝休み`holidayCKBox=6&holidayCKBox=7&holidayCKBox=8`
+島根県(32)`tDFK1CmbBox=32`で土(6)日(7)祝(8)休み`holidayCKBox=6&holidayCKBox=7&holidayCKBox=8`
 ```bash
 curl -c🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'screenId=GECA110010&action=searchShosaiBtn'
 curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110030.do -d'holidayCKBox=6&holidayCKBox=7&holidayCKBox=8&screenId=GECA110030&action=saveCondBtn'
