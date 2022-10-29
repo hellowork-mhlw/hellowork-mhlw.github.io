@@ -168,8 +168,12 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | tnseiCmbBox | 定年制 | 60~70 |
 | nyukyoKaCKBox | 入居可能住宅 | 1: 単身用あり<br>2: 世帯用あり |
 | riyoKanoNaTjsAriCKBox | 利用可能な託児施設 | 1 |
-| ensn11CmbBox | 沿線 | 001~999 |
-| ensn12CmbBox | 沿線 | 001~999 |
+| ensn11CmbBox | 沿線 | 001~214 |
+| ensn12CmbBox | 沿線 | 001~214 |
+| ensn21CmbBox | 沿線 | 001~214 |
+| ensn22CmbBox | 沿線 | 001~214 |
+| ensn31CmbBox | 沿線 | 001~214 |
+| ensn32CmbBox | 沿線 | 001~214 |
 | jgshMeiIn | 事業所名 | 全角60文字以内 |
 | nozokuCKBox | のぞく | 1 |
 | jginSuRadioBtn | 従業員数 | 0: 指定しない<br>1: 10人以上<br>2: 100人以上<br>3: 300人以上<br>4: 1000人以上 |
