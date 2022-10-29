@@ -83,6 +83,10 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | sKGYBRUIGe2 | 職業分類2下 | 半角数字2桁 |
 | sKGYBRUIJo3 | 職業分類3上 | 半角数字3桁 |
 | sKGYBRUIGe3 | 職業分類3下 | 半角数字2桁 |
+| koyoFltmCKBox | 雇用フルタイムチェックボックス | 1: 正社員<br>2: 正社員以外<br>3: 有期雇用派遣労働者<br>4: 無期雇用派遣労働者 |
+| koyoPartCKBox | 雇用パートチェックボックス | 5: パート労働者<br>6: 有期雇用派遣パート<br>7: 無期雇用派遣パート |
+| newArrivedCKBox | 新着チェックボックス | 1: 新着（当日・前日）<br>2: 新着（１週間以内） |
+| freeWordRadioBtn | フリーワードラジオボタン | 1: OR検索<br>2: AND検索 |
 | freeWordInput | フリーワード | 全角50文字以内 |
 | nOTKNSKFreeWordInput | NOT検索フリーワード | 全角50文字以内 |
 | searchBtn | 検索ボタン | 検索 |
