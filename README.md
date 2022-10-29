@@ -11,24 +11,24 @@
 ## 検索
 
 ```bash
-curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
 ### フリーワード
 `freeWordInput=公共職業安定所`
 ```bash
-curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&freeWordInput=公共職業安定所&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&freeWordInput=公共職業安定所&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
 ### 就業場所
 島根県(32)`tDFK1CmbBox=32`
 ```bash
-curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&tDFK1CmbBox=32&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&tDFK1CmbBox=32&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
 東京都(13)千代田区(101)`siku1Hidden=13101`
 ```bash
-curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&siku1Hidden=13101&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+curl https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&siku1Hidden=13101&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
 ```
 
 via Proxy
@@ -37,16 +37,24 @@ curl https://hellowork-mhlw.vercel.app/api?siku1Hidden=13101
 curl https://hellowork-mhlw.vercel.app/api/json?siku1Hidden=13101 | jq
 ```
 
+### 詳細検索条件
+賞与あり`shoyoAriCKBox=1`
+```bash
+curl -c🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'screenId=GECA110010&action=searchShosaiBtn'
+curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110030.do -d'shoyoAriCKBox=1&screenId=GECA110030&action=saveCondBtn'
+curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep kyujinkensu
+```
+
 ### ページネーション
 5ページ目`fwListLeftPage=5`
 ```bash
-curl -c 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep 件を表示
-curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&screenId=GECA110010&maba_vrbs' | grep 件を表示
+curl -c🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'kjKbnRadioBtn=1&searchBtn&screenId=GECA110010&maba_vrbs=searchBtn' | grep 件を表示
+curl -b🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&screenId=GECA110010&maba_vrbs' | grep 件を表示
 ```
 
 表示件数`fwListNaviDisp=50`
 ```bash
-curl -b 🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d 'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&fwListNaviDisp=50&screenId=GECA110010&maba_vrbs' | grep 件を表示
+curl -b🍪  https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNaviBtn1&fwListNowPage=1&fwListLeftPage=5&fwListNaviCount=7&fwListNaviDisp=50&screenId=GECA110010&maba_vrbs' | grep 件を表示
 ```
 
 ## 検索パラメータ
