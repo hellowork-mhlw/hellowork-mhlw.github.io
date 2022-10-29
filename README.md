@@ -221,6 +221,7 @@ for await (const params of paramsList) {
 const options = htmls.flatMap(html=>[...new DOMParser().parseFromString(html,'text/html').querySelectorAll('#ID_ensn11CmbBox, #ID_ensn12CmbBox, #ID_ensn21CmbBox, #ID_ensn22CmbBox, #ID_ensn31CmbBox, #ID_ensn32CmbBox')].flatMap(select => [...select.options]))
 copy(Object.entries(options.reduce((obj, o) => (obj[o.value] = o.textContent, obj), {})).filter(e=>e[0]).sort((a, b) => a[0]-b[0]).map(e => `| ${e[0]} | ${e[1]} |`).join('\n'))
 ```
+
 </details>
 
 | 値 | 沿線 |
