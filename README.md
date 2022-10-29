@@ -74,7 +74,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | ippanCKBox | 一般[^2] | 1: フルタイム<br>2: パート |
 | sGSYACKBox | 障がい者[^2] | 1: フルタイム<br>2: パート |
 | nenreiInput | 年齢 | 0~99[^3] |
-| nenreiCKBox | 年齢チェックボックス[^2] | 1: 不問のみ<br>2: 不問をのぞく |
+| nenreiCKBox | 年齢[^2] | 1: 不問のみ<br>2: 不問をのぞく |
 | tDFK1CmbBox | 都道府県1 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
 | tDFK2CmbBox | 都道府県2 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
 | tDFK3CmbBox | 都道府県3 | [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf) 01~47 |
