@@ -206,6 +206,10 @@ for await (const i of [...Array(47).keys()].map(i=>(i+1).toString().padStart(2, 
 }
 
 const 市区町村 = Object.fromEntries(htmls.map((html, i)=>[(i + 1).toString().padStart(2, 0), [...new DOMParser().parseFromString(html,'text/html').all.rank1CodeMulti.options].map(o => ({value: o.value, text: o.textContent}))]))
+const 都道府県 = await fetch('https://hellowork-mhlw.github.io/api/都道府県.json').then(r=>r.json())
+
+const rows = 都道府県.filter(pref => pref.text !== '海外').flatMap(pref => 市区町村[pref.value].map((siku, i) => '<tr>' + (i ? '' : `<td rowspan="${市区町村[pref.value].length}">${pref.text}</td>`) + `<td>${siku.text}</td></tr>`))
+console.log(`<table><thead><tr><th>都道府県</th><th>市区町村</th></tr></thead><tbody>${rows.join('')}</tbody></table>`)
 ```
 
 ## 職種
