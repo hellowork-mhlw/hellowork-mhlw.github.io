@@ -67,7 +67,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | kjKbnRadioBtn | 求人区分 | 1: 一般求人<br>2: 新卒・既卒求人<br>3: 季節求人<br>4: 出稼ぎ求人<br>5: 障害のある方のための求人 |
 | ippanCKBox | 一般[^2] | 1: フルタイム<br>2: パート |
 | sGSYACKBox | 障がい者[^2] | 1: フルタイム<br>2: パート |
-| nenreiInput | 年齢 | 0~99[^3] |
+| nenreiInput | 年齢 | 0~99 |
 | nenreiCKBox | 年齢[^2] | 1: 不問のみ<br>2: 不問をのぞく |
 | tDFK1CmbBox | 都道府県1 | 01~47: [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf)<br>59: 海外 |
 | tDFK2CmbBox | 都道府県2 | 01~47: [都道府県番号](https://www.mhlw.go.jp/topics/2007/07/dl/tp0727-1d.pdf)<br>59: 海外 |
@@ -201,6 +201,21 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 ```bash
 curl https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do -d'screenId=GMABACODE0&action=initDisp&codeAssistType=3&codeAssistKind=7&codeAssistItemCode=kiboSuruSKSU1Hidden&codeAssistItemName=kiboSuruSKSU1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistSelectLimit=-1&codeAssistEnableOkRank=&codeAssistAllowOkRank=&codeAssistNowSelectNum=-1&codeAssistTdfkCmbCode=&onModal=false' -o 職種大分類.html
 for i in {01..14}; do curl https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do -d"screenId=GMABACODE0&action=execChange&codeAssistType=3&codeAssistKind=7&codeAssistItemCode=kiboSuruSKSU1Hidden&codeAssistItemName=kiboSuruSKSU1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistEnableOkRank=&selectedRank=1&rankMax=2&rank1Code=$i&onModal=false" -o 職種詳細$i.html; done
+```
+
+```javascript
+// nvm install node
+// npm install jsdom
+// node app.mjs
+// sudo apt install -y inotify-tools
+// while inotifywait -e close_write app.mjs; do node app.mjs; done
+import { JSDOM } from 'jsdom'
+
+const { window: { document } } = await JSDOM.fromFile('職種大分類.html', { contentType: 'text/html; charset=UTF-8' })
+console.log(JSON.stringify([...document.querySelectorAll('option:not([value=""])')].map(o => ({ value: o.value, text: o.textContent }))))
+
+const result = await Promise.all([...Array(14).keys()].map(i => (i + 1).toString().padStart(2, 0)).map(i => JSDOM.fromFile(`職種詳細${i}.html`, { contentType: 'text/html; charset=UTF-8' }).then((({ window: { ID_rank2Codes } }) => [i, [...ID_rank2Codes.querySelectorAll('option:not([value="00"])')].map(o => ({ value: parseInt(o.value, 10), text: o.textContent }))]))))
+console.log(JSON.stringify(Object.fromEntries(result)))
 ```
 
 ## 沿線一覧
@@ -491,4 +506,3 @@ https://ja.wikipedia.org/wiki/ヘボン式ローマ字#表と表記法
 
 [^1]: https://hoken.hellowork.mhlw.go.jp/assist/001000.do?screenId=001000&action=koyohohiLicenceLink
 [^2]: チェックボックスは複数設定できます。
-[^3]: 100歳以上の方の労働はお断りさせていただきます。
