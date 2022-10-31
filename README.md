@@ -196,6 +196,13 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 | maba_vrbs | ボタンリスト(カンマ区切り) | saveCondBtn: OK<br>searchShsiClearBtn: 詳細検索条件をクリア |
 | preCheckFlg | 事前確認フラグ | true |
 
+## 職種
+
+```bash
+curl https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do -d'screenId=GMABACODE0&action=initDisp&codeAssistType=3&codeAssistKind=7&codeAssistItemCode=kiboSuruSKSU1Hidden&codeAssistItemName=kiboSuruSKSU1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistSelectLimit=-1&codeAssistEnableOkRank=&codeAssistAllowOkRank=&codeAssistNowSelectNum=-1&codeAssistTdfkCmbCode=&onModal=false' -o 職種大分類.html
+curl https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do -d'screenId=GMABACODE0&action=execChange&codeAssistType=3&codeAssistKind=7&codeAssistItemCode=kiboSuruSKSU1Hidden&codeAssistItemName=kiboSuruSKSU1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistEnableOkRank=&selectedRank=1&rankMax=2&rank1Code=01&onModal=false' -o 職種詳細1.html
+```
+
 ## 沿線一覧
 
 <details>
