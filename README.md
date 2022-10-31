@@ -213,11 +213,9 @@ import { JSDOM } from 'jsdom'
 
 const { window: { document } } = await JSDOM.fromFile('職種大分類.html', { contentType: 'text/html; charset=UTF-8' })
 const classes = [...document.querySelectorAll('option:not([value=""])')].map(o => ({ value: o.value, text: o.textContent }))
-console.log(JSON.stringify(classes))
 
 const result = await Promise.all([...Array(14).keys()].map(i => (i + 1).toString().padStart(2, 0)).map(i => JSDOM.fromFile(`職種詳細${i}.html`, { contentType: 'text/html; charset=UTF-8' }).then((({ window: { ID_rank2Codes } }) => [i, [...ID_rank2Codes.querySelectorAll('option:not([value="00"])')].map(o => ({ value: parseInt(o.value, 10), text: o.textContent }))]))))
 const details = Object.fromEntries(result)
-console.log(JSON.stringify(details))
 
 const rows = classes.flatMap(cls => details[cls.value].map((detail, i) => '<tr>' + (i ? '' : `<td rowspan="${details[cls.value].length}">${cls.text}</td>`) + `<td>${detail.text}</td></tr>`))
 console.log(`<table>
