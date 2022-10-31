@@ -199,6 +199,7 @@ curl -b🍪 https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do -d'fwListNavi
 ## 市区町村
 
 ```javascript
+// https://www.hellowork.mhlw.go.jp 配下で実行する必要があいます
 const htmls = []
 for await (const i of [...Array(47).keys()].map(i=>(i+1).toString().padStart(2, 0))) {
     htmls.push(await fetch('https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do', {method: 'POST', body: new URLSearchParams(`screenId=GMABACODE0&action=initDisp&codeAssistType=5&codeAssistKind=9&codeAssistItemCode=siku1Hidden&codeAssistItemName=tDFK_Uchi1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistSelectLimit=-1&codeAssistEnableOkRank=&codeAssistAllowOkRank=&codeAssistNowSelectNum=-1&codeAssistTdfkCmbCode=${i}&onModal=false`)}).then(r=>r.text()))
