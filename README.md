@@ -204,6 +204,8 @@ for await (const i of [...Array(47).keys()].map(i=>(i+1).toString().padStart(2, 
     htmls.push(await fetch('https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do', {method: 'POST', body: new URLSearchParams(`screenId=GMABACODE0&action=initDisp&codeAssistType=5&codeAssistKind=9&codeAssistItemCode=siku1Hidden&codeAssistItemName=tDFK_Uchi1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistSelectLimit=-1&codeAssistEnableOkRank=&codeAssistAllowOkRank=&codeAssistNowSelectNum=-1&codeAssistTdfkCmbCode=${i}&onModal=false`)}).then(r=>r.text()))
     await new Promise(resolve => setTimeout(resolve, 3000))
 }
+
+const 市区町村 = Object.fromEntries(htmls.map((html, i)=>[(i + 1).toString().padStart(2, 0), [...new DOMParser().parseFromString(html,'text/html').all.rank1CodeMulti.options].map(o => ({value: o.value, text: o.textContent}))]))
 ```
 
 ## 職種
