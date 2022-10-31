@@ -203,7 +203,7 @@ curl https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do -d'screenId=GMABACODE0&ac
 for i in {01..14}; do curl https://www.hellowork.mhlw.go.jp/kensaku/CODE0.do -d"screenId=GMABACODE0&action=execChange&codeAssistType=3&codeAssistKind=7&codeAssistItemCode=kiboSuruSKSU1Hidden&codeAssistItemName=kiboSuruSKSU1Label&codeAssistDivide=1&codeAssistRankLimit=&codeAssistEnableOkRank=&selectedRank=1&rankMax=2&rank1Code=$i&onModal=false" -o 職種詳細$i.html; done
 ```
 
-```javascript:app.mjs
+```javascript
 // nvm install node
 // npm install jsdom
 // node app.mjs
