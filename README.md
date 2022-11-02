@@ -240,6 +240,42 @@ console.log(`<table><thead><tr><th>大分類</th><th>詳細</th></tr></thead><tb
 
 <table><thead><tr><th>大分類</th><th>詳細</th></tr></thead><tbody><tr><td rowspan="15">事務、管理職</td><td>一般事務、事務補助</td></tr><tr><td>総務事務、人事事務</td></tr><tr><td>受付・案内事務、秘書</td></tr><tr><td>医療事務・受付、調剤薬局事務、介護事務</td></tr><tr><td>会計・経理事務</td></tr><tr><td>営業事務、販売事務</td></tr><tr><td>金融・保険事務</td></tr><tr><td>貿易事務</td></tr><tr><td>企画事務、マーケティング</td></tr><tr><td>生産・工程管理事務、出荷・受荷事務</td></tr><tr><td>運行管理事務、郵便事務、旅客・料金収受係</td></tr><tr><td>データ入力等ＰＣ操作（ＣＡＤ、ＤＴＰ含）</td></tr><tr><td>コールセンターオペレーター、テレアポ等</td></tr><tr><td>集金・検針・調査等の外勤事務</td></tr><tr><td>法人・団体の役員・管理職等</td></tr><tr><td rowspan="10">営業</td><td>不動産営業</td></tr><tr><td>金融・保険営業</td></tr><tr><td>飲食料品販売営業</td></tr><tr><td>機械器具・電気器具販売営業</td></tr><tr><td>自動車販売営業</td></tr><tr><td>製品受注営業</td></tr><tr><td>通信・情報システム営業</td></tr><tr><td>化学品販売営業、医薬品営業</td></tr><tr><td>広告営業、会員勧誘、その他の営業</td></tr><tr><td>テレフォンアポインター</td></tr><tr><td rowspan="14">販売</td><td>スーパー・百貨店販売店員</td></tr><tr><td>その他の小売店販売員</td></tr><tr><td>小売店作業員（商品の陳列・補充等）</td></tr><tr><td>店長（小売、卸売）</td></tr><tr><td>不動産仲介・売買</td></tr><tr><td>訪問販売、卸売、その他の販売</td></tr><tr><td>レジ係</td></tr><tr><td>コンビニエンスストア店員</td></tr><tr><td>衣料品販売店員</td></tr><tr><td>飲食料品販売店員</td></tr><tr><td>医薬品・化粧品販売店員</td></tr><tr><td>自動車販売店員</td></tr><tr><td>電気機器販売店員</td></tr><tr><td>ガソリンスタンド販売員</td></tr><tr><td rowspan="15">接客、理美容、調理、サービス</td><td>飲食店のホールスタッフ</td></tr><tr><td>調理人（給食）</td></tr><tr><td>調理人（食堂、居酒屋、弁当店、その他）</td></tr><tr><td>調理補助、調理人見習</td></tr><tr><td>食堂作業員（洗い場等）</td></tr><tr><td>クリーニング等の生活衛生サービス</td></tr><tr><td>保育・介護補助、冠婚葬祭、その他サービス</td></tr><tr><td>飲食店店長</td></tr><tr><td>ホテル・旅館のフロント、接客、客室係</td></tr><tr><td>娯楽施設・スポーツ施設・その他の接客</td></tr><tr><td>美容師</td></tr><tr><td>理容師</td></tr><tr><td>エステティシャン、ネイリスト</td></tr><tr><td>理美容師補助、その他の美容サービス</td></tr><tr><td>調理人（日本・西洋・中華料理）</td></tr><tr><td rowspan="9">介護、福祉</td><td>施設介護員</td></tr><tr><td>訪問介護員、ホームヘルパー</td></tr><tr><td>介護支援専門員、ケアマネージャー</td></tr><tr><td>老人福祉施設指導員</td></tr><tr><td>障害者福祉施設指導員</td></tr><tr><td>児童福祉施設指導員</td></tr><tr><td>福祉相談員、ケースワーカー</td></tr><tr><td>その他の福祉専門職</td></tr><tr><td>福祉施設管理者</td></tr><tr><td rowspan="13">保育、教育</td><td>保育士</td></tr><tr><td>習い事・その他の講師、インストラクター</td></tr><tr><td>図書館司書</td></tr><tr><td>学芸員</td></tr><tr><td>学校カウンセラー</td></tr><tr><td>保育補助（その他サービスを含む）</td></tr><tr><td>学童保育・放課後児童クラブ等指導員</td></tr><tr><td>幼稚園教員</td></tr><tr><td>小・中・高等学校・特別支援学校等教員</td></tr><tr><td>専修学校・各種学校教員</td></tr><tr><td>職業訓練指導員、研修講師、その他の教員</td></tr><tr><td>学習塾教師</td></tr><tr><td>スポーツインストラクター</td></tr><tr><td rowspan="15">医療、看護、保健</td><td>医師、歯科医師、獣医師</td></tr><tr><td>薬剤師</td></tr><tr><td>看護師</td></tr><tr><td>准看護師</td></tr><tr><td>看護助手</td></tr><tr><td>保健師、助産師</td></tr><tr><td>理学療法士、作業療法士</td></tr><tr><td>臨床検査技師、診療放射線技師等</td></tr><tr><td>歯科衛生士、歯科技工士</td></tr><tr><td>歯科助手、歯科受付</td></tr><tr><td>栄養士、管理栄養士</td></tr><tr><td>あん摩マッサージ指圧・鍼灸師、柔道整復師</td></tr><tr><td>言語聴覚士、その他の保健医療専門職</td></tr><tr><td>動物病院助手、その他の助手等</td></tr><tr><td>医療事務・受付、調剤薬局事務</td></tr><tr><td rowspan="15">製造、修理、保全、検査、印刷</td><td>金属材料製造、金属加工、溶接</td></tr><tr><td>ＤＴＰオペレーター、印刷、製本</td></tr><tr><td>ＣＡＤオペレーター、製図、写図、現図</td></tr><tr><td>塗装、看板制作、その他生産関連</td></tr><tr><td>製品検査</td></tr><tr><td>生産設備オペレーター（制御・監視）</td></tr><tr><td>工場労務作業</td></tr><tr><td>自動車組立、輸送用機械組立・整備</td></tr><tr><td>自動車整備工</td></tr><tr><td>電気・電子・通信機器等組立・修理</td></tr><tr><td>光学機械、その他の機械組立・修理</td></tr><tr><td>食料品製造・加工</td></tr><tr><td>衣服・繊維製品製造、パタンナー</td></tr><tr><td>化学製品、窯業・土石製品の製造・加工</td></tr><tr><td>プラスチック製品、その他の製造・加工</td></tr><tr><td rowspan="15">技術職（建設、開発、ＩＴ）、専門職</td><td>建築技術者（工事監督、設計技術者等）</td></tr><tr><td>ウェブデザイナー</td></tr><tr><td>デザイナー（ウェブを除く）</td></tr><tr><td>カメラマン、記者・編集者、その他芸術</td></tr><tr><td>通訳、翻訳</td></tr><tr><td>カウンセラー（医療・福祉施設を除く）</td></tr><tr><td>司書、その他の専門職</td></tr><tr><td>土木技術者（工事監督、設計技術者等）</td></tr><tr><td>測量技術者（測量士、測量士補）</td></tr><tr><td>ソフトウェア開発技術者、プログラマー</td></tr><tr><td>その他の情報処理・通信技術者</td></tr><tr><td>電気・電子・電気通信の開発・製造技術者</td></tr><tr><td>機械・自動車等の設計・製造技術者</td></tr><tr><td>食品・その他の技術者、研究者</td></tr><tr><td>経営、法務</td></tr><tr><td rowspan="14">建築、土木、電気工事</td><td>大工</td></tr><tr><td>通信設備作業員、送電線等架線・敷設作業員</td></tr><tr><td>採掘</td></tr><tr><td>建設技術者（工事監督、設計技術者等）</td></tr><tr><td>土木技術者（工事監督、設計技術者等）</td></tr><tr><td>測量技術者（測量士、測量士補）等</td></tr><tr><td>配管工</td></tr><tr><td>左官、タイル張・内装・防水工等</td></tr><tr><td>とび工、型枠大工、鉄筋工（建設躯体工事）</td></tr><tr><td>建設機械・クレーン等運転工、玉掛</td></tr><tr><td>ダンプカー・ミキサー車運転手</td></tr><tr><td>建設・土木作業員</td></tr><tr><td>舗装・線路工事・掘削等作業員</td></tr><tr><td>電気工事作業員</td></tr><tr><td rowspan="9">警備、施設管理、設備運転</td><td>施設警備員</td></tr><tr><td>道路交通誘導員</td></tr><tr><td>雑踏警備員</td></tr><tr><td>その他の保安・警備・監視員</td></tr><tr><td>管理人（マンション、アパート等）</td></tr><tr><td>管理人（駐車場、駐輪場）</td></tr><tr><td>ビル設備管理員、ビル管理人</td></tr><tr><td>管理人（寄宿舎、寮、その他）</td></tr><tr><td>機械設備運転（クレーン、ボイラー、発電等</td></tr><tr><td rowspan="15">運輸（運転）、配送</td><td>トラック運転手</td></tr><tr><td>鉄道・船舶・航空機の運転、その他の輸送</td></tr><tr><td>荷物の配達</td></tr><tr><td>ルート集配</td></tr><tr><td>郵便の集配、新聞配達等</td></tr><tr><td>運行管理事務</td></tr><tr><td>出札・旅客・貨物・料金収受係</td></tr><tr><td>トレーラー・タンクローリー運転手</td></tr><tr><td>ミキサー車・ダンプカー運転手</td></tr><tr><td>ごみ収集・陸送・その他の貨物自動車運転手</td></tr><tr><td>バス運転手</td></tr><tr><td>タクシー運転手</td></tr><tr><td>役員車・送迎車等の乗用自動車運転手</td></tr><tr><td>その他の自動車運転手</td></tr><tr><td>フォークリフト運転作業員</td></tr><tr><td rowspan="12">清掃・洗浄、倉庫、包装、軽作業</td><td>ビル・建物の清掃、ハウスクリーニング</td></tr><tr><td>食堂作業員（洗い場等）</td></tr><tr><td>小売店作業員（商品の陳列・補充等）</td></tr><tr><td>学校・病院の用務員、その他の作業員</td></tr><tr><td>ごみ収集、産業洗浄、その他の清掃・洗浄</td></tr><tr><td>フォークリフト運転作業員</td></tr><tr><td>倉庫作業</td></tr><tr><td>梱包作業</td></tr><tr><td>包装、ラベル・シール貼付</td></tr><tr><td>商品等の選別・ピッキング</td></tr><tr><td>運搬・積卸・引越作業、港湾荷役作業</td></tr><tr><td>工場労務作業員</td></tr><tr><td rowspan="8">農業、林業、漁業</td><td>稲作、畑作、園芸等</td></tr><tr><td>養畜、動物飼育等</td></tr><tr><td>植木職、造園師</td></tr><tr><td>その他の農業</td></tr><tr><td>林業</td></tr><tr><td>漁業</td></tr><tr><td>農業・畜産・林業・水産技術者</td></tr><tr><td>農学・林学・水産学研究者</td></tr></tbody></table>
 
+## 職業分類
+
+```javascript
+// https://www.hellowork.mhlw.go.jp 配下で実行する必要があいます
+const htmls = {}
+async function fetchDown(params) {
+    await new Promise(resolve => setTimeout(resolve, 3000))
+    const html = await fetch('https://www.hellowork.mhlw.go.jp/kensaku/CODE1.do', {
+        method: 'POST', body: new URLSearchParams({
+            screenId: 'GMABACODE1',
+            action: 'execChange',
+            codeAssistType: 3,
+            codeAssistKind: 10,
+            codeAssistItemCode: 'sKGYBRUIJo1,sKGYBRUIGe1',
+            codeAssistItemName: 'sKGYBRUI1Label',
+            codeAssistDivide: '1,4',
+            codeAssistRankLimit: '',
+            selectButton: 2,
+            historyCode: '',
+            historyName: '',
+            rankMax: 5,
+            onModal: false,
+            ...params
+        })
+    }).then(r => r.text())
+    htmls[params.rank00Code] = html
+    const doc = new DOMParser().parseFromString(html, 'text/html')
+    if (doc.all.down) for await (const option of doc.all.rank00Code.options) await fetchDown({ selectedRank: parseInt(html.match(/(?<=RANK=")\d(?=")/), 10) + 1, rank00Code: option.value, rank00Name: option.textContent, historyCode: html.match(/(?<=HISTORY_CODE=").*?(?=")/), historyName: html.match(/(?<=HISTORY_NAME=").*?(?=")/) })
+}
+
+const html = await fetch('https://www.hellowork.mhlw.go.jp/kensaku/CODE1.do', { method: 'POST', body: new URLSearchParams('screenId=GMABACODE1&action=initDisp&codeAssistType=3&codeAssistKind=10&codeAssistItemCode=sKGYBRUIJo1%2CsKGYBRUIGe1&codeAssistItemName=sKGYBRUI1Label&codeAssistDivide=1%2C4&codeAssistRankLimit=&codeAssistSelectLimit=0&codeAssistEnableOkRank=&codeAssistNowSelectNum=-1&onModal=false') }).then(r => r.text())
+htmls['root'] = html
+const doc = new DOMParser().parseFromString(html, 'text/html')
+for await (const option of doc.all.rank00Code.options) await fetchDown({ selectedRank: parseInt(html.match(/(?<=RANK=")\d(?=")/), 10) + 1, rank00Code: option.value, rank00Name: option.textContent })
+```
+
 ## 沿線一覧
 
 ```javascript
