@@ -15,4 +15,4 @@ export default (req) => fetch("https://www.hellowork.mhlw.go.jp/kensaku/GECA1100
     ...Object.fromEntries(new URL(req.url).searchParams)
   }),
   "method": "POST",
-}).then(r => (console.log(Object.fromEntries(r.headers)), new Response(r.body, r)))
+}).then(r => (console.log(Object.fromEntries(r.headers)), new Response(r.body, {headers: {...Object.fromEntries(r.headers), 'x-set-cookie': r.headers.get('set-cookie')}})))
