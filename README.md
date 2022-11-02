@@ -249,7 +249,7 @@ console.log(`<table><thead><tr><th>大分類</th><th>詳細</th></tr></thead><tb
 ## 職業分類
 
 ```javascript
-// https://www.hellowork.mhlw.go.jp 配下で実行する必要があいます
+// https://www.hellowork.mhlw.go.jp 配下で実行する必要があいます 1346requests
 const htmls = {}
 async function fetchDown(params) {
     await new Promise(resolve => setTimeout(resolve, 3000))
