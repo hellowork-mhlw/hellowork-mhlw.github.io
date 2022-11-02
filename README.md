@@ -282,6 +282,7 @@ const doc = new DOMParser().parseFromString(html, 'text/html')
 for await (const option of doc.all.rank00Code.options) await fetchDown({ selectedRank: parseInt(html.match(/(?<=RANK=")\d(?=")/), 10) + 1, rank00Code: option.value, rank00Name: option.textContent })
 
 const 職業分類 = Object.fromEntries(Object.entries(htmls).map(([code, html]) => [code, [...new DOMParser().parseFromString(html, 'text/html').all.rank00Code.options].map(o => ({ value: o.value, text: o.textContent }))]))
+const 正規化職業分類 = Object.fromEntries(Object.entries(htmls).map(([code, html]) => [code, [...new DOMParser().parseFromString(html, 'text/html').all.rank00Code.options].map(o => ({ value: o.value, text: o.textContent.normalize('NFKC') }))]))
 ```
 
 ## 沿線一覧
