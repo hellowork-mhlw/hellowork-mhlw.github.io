@@ -2,7 +2,7 @@
   "public": true,
   "headers": [
     {
-      "source": "/kensaku",
+      "source": "/api",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "source": "/api",
+      "source": "/api/test",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
