@@ -280,6 +280,8 @@ const html = await fetch('https://www.hellowork.mhlw.go.jp/kensaku/CODE1.do', { 
 htmls['root'] = html
 const doc = new DOMParser().parseFromString(html, 'text/html')
 for await (const option of doc.all.rank00Code.options) await fetchDown({ selectedRank: parseInt(html.match(/(?<=RANK=")\d(?=")/), 10) + 1, rank00Code: option.value, rank00Name: option.textContent })
+
+const 職業分類 = Object.fromEntries(Object.entries(htmls).map(([code, html]) => [code, [...new DOMParser().parseFromString(html, 'text/html').all.rank00Code.options].map(o => ({ value: o.value, text: o.textContent }))]))
 ```
 
 ## 沿線一覧
