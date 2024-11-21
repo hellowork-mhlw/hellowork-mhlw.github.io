@@ -39,6 +39,7 @@ async function handler() {
               date: parsed.date,
               text: parsed.text,
             });
+            console.log(emails)
           });
         });
       });
