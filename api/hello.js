@@ -2,6 +2,7 @@ import { simpleParser } from 'mailparser';
 import Imap from 'imap';
 
 async function handler() {
+  console.log(process.env.IMAP_HOST)
   const imapConfig = {
     user: process.env.IMAP_USER,
     password: process.env.IMAP_PASSWORD,
