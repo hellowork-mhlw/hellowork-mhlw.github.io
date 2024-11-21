@@ -3,6 +3,7 @@
   "dependencies": {
     "jsdom": "^20.0.1",
     "node-fetch": "^3.2.10",
+    "mailparser": "^3.7.1",
     "imap": "^0.8.19"
   }
 }
