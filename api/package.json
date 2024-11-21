@@ -2,6 +2,7 @@
   "type": "module",
   "dependencies": {
     "jsdom": "^20.0.1",
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.2.10",
+    "imap": "^0.8.19"
   }
 }
